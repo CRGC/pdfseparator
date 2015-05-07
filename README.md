@@ -8,8 +8,11 @@ Input: CSV file containing 2 columns: "facility" and "outputfile". The "facility
 The program looks through each PDF file in the input folder, searching for the text in the "facility" column of the csv file. If there are multiple matches on the same page, it uses the match closest to the top of the page.  Then, it creates a PDF output file for each row in the CSV file that had a match.  Finally, if there were any pages in the input file that did not match any entries in the CSV file, it exports those pages with a "missing-" prefix to the source folder.
 
 Prerequisites:
+
 -ActivePython 2.7
+
 -pdfrw library https://code.google.com/p/pdfrw/
+
 -pdfminer library https://pypi.python.org/pypi/pdfminer/
 
 You will want to change the InitialFolder variable to point to the file location where your input PDF files are typically stored.
